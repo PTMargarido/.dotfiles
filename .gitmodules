@@ -1,3 +1,6 @@
 [submodule "nvim/.config/nvim"]
 	path = nvim/.config/nvim
 	url = git@github.com:PTMargarido/nvim.git
+[submodule "personal/repos/xtradebot-deploy"]
+	path = personal/repos/xtradebot-deploy
+	url = git@github.com:PTMargarido/xtradebot-deploy-priv.git
