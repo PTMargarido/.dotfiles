@@ -34,7 +34,4 @@ set -o vi
 export WINEDEBUG=-all
 export WINEARCH=win32
 
-bind 'set show-all-if-ambiguous on'
-bind 'TAB:menu-complete'
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
