@@ -17,6 +17,7 @@ alias gs="git status"
 alias grs="git restore --staged"
 alias gap="git add -p"
 alias gcm="git commit -m"
+alias vim="nvim"
 
 #export
 export LIBVA_DRIVER_NAME=iHD
