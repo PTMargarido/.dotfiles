@@ -35,4 +35,7 @@ set -o vi
 export WINEDEBUG=-all
 export WINEARCH=win32
 
+HISTSIZE=20000
+HISTFILESIZE=20000
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash

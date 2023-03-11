@@ -32,6 +32,3 @@ fi
 source /usr/share/fzf/completion.bash
 source /usr/share/fzf/key-bindings.bash
 export TERM=alacritty
-
-HISTSIZE=1000
-HISTFILESIZE=2000
