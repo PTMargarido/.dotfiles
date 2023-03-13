@@ -27,7 +27,11 @@ export VISUAL=/usr/bin/nvim
 export EDITOR=/usr/bin/nvim
 
 export PYENV_ROOT=~/.pyenv
+
+export PATH="~/.cargo/bin/:$PATH"
+export PATH="~/.local/bin/:$PATH"
 export PATH="$PYENV_ROOT/bin:$PATH"
+
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
@@ -39,3 +43,5 @@ HISTSIZE=20000
 HISTFILESIZE=20000
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+bind -x '"\C-f":tmux-sessionizer'
