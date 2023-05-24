@@ -9,7 +9,7 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-PS1="[\[\e[33m\]\u@\h\[\e[m\]:\[\e[32m\] \W\[\e[m\]]\$ "
+PS1="[\[\e[33m\]\u@\h\[\e[m\]:\[\e[32m\] \W\[\e[m\]]\e[38;5;101m\]$(__git_ps1 " (%s)")\e[0m\] \$ "
 
 #alias
 alias pacsy="sudo pacman -Sy"
