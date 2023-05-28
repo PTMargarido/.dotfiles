@@ -45,3 +45,4 @@ HISTFILESIZE=20000
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 bind -x '"\C-f":tmux-sessionizer'
+source ~/.local/bin/.git-prompt.sh

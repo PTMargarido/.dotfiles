@@ -31,5 +31,5 @@ fi
 ## fzf ##
 source /usr/share/fzf/completion.bash
 source /usr/share/fzf/key-bindings.bash
-source ~/.local/bin/.git-prompt.sh
 export TERM=alacritty
+
