@@ -2,6 +2,7 @@
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 ZVM_INIT_MODE=sourcing
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -118,11 +119,6 @@ alias gcm="git commit -m"
 alias vim="nvim"
 alias vi="nvim"
 
-# key bindings
-function run-tmux-sessionizer { tmux-sessionizer; zle redisplay; }
-zle -N run-tmux-sessionizer
-bindkey '^f' run-tmux-sessionizer
-
 # ls backend
 ZSH_LS_BACKEND=eza
 
@@ -137,3 +133,8 @@ export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/custom/themes/zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
 source $ZSH/oh-my-zsh.sh
+
+# key bindings
+function run-tmux-sessionizer { tmux-sessionizer; zle redisplay; }
+zle -N run-tmux-sessionizer
+bindkey '^f' run-tmux-sessionizer
