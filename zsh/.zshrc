@@ -134,6 +134,10 @@ source $ZSH/custom/themes/zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-sy
 
 source $ZSH/oh-my-zsh.sh
 
+# init starship
+export STARSHIP_CONFIG=~/.config/starship.toml
+eval "$(starship init zsh)"
+
 # key bindings
 function run-tmux-sessionizer { tmux-sessionizer; zle redisplay; }
 zle -N run-tmux-sessionizer
