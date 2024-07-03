@@ -1,12 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# Path to your Oh My Zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-
-# Catppuccino theme for zsh-syntax-highlighting
-source $ZSH/custom/themes/zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -84,7 +78,6 @@ plugins=(
     autoupdate
 )
 
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -135,3 +128,11 @@ ZSH_LS_BACKEND=eza
 # init starship
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship.toml
+
+# Path to your Oh My Zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
+# Catppuccino theme for zsh-syntax-highlighting
+source $ZSH/custom/themes/zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
+
+source $ZSH/oh-my-zsh.sh
