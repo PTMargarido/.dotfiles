@@ -5,5 +5,6 @@ do
     echo "stow $folder"
     stow -D $folder
     stow --adopt $folder
+    git restore .
 done
 popd
