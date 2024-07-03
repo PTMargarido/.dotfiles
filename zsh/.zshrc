@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
+ZVM_INIT_MODE=sourcing
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -69,13 +70,13 @@ export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git 
-    fzf
     ls
     ssh-agent
     zsh-autosuggestions
     zsh-syntax-highlighting
     zsh-vi-mode
     autoupdate
+    fzf
 )
 
 
