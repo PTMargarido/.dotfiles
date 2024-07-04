@@ -71,8 +71,14 @@ ZVM_INIT_MODE=sourcing
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    archlinux
+    copypath
+    copyfile
+    extract
     git 
+    git-commit
     ls
+    fd
     ssh-agent
     zsh-autosuggestions
     zsh-syntax-highlighting
@@ -152,3 +158,6 @@ eval "$(starship init zsh)"
 function run-tmux-sessionizer { tmux-sessionizer; zle redisplay; }
 zle -N run-tmux-sessionizer
 bindkey '^f' run-tmux-sessionizer
+
+# add ssh-keys
+zstyle :omz:plugins:ssh-agent identities github github-hbk-passphrase
