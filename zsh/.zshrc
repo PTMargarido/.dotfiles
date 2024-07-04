@@ -1,4 +1,5 @@
 # If you come from bash you might have to change your $PATH.
+#
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 ZVM_INIT_MODE=sourcing
@@ -77,6 +78,7 @@ plugins=(
     zsh-syntax-highlighting
     zsh-vi-mode
     autoupdate
+    pyenv
     fzf
 )
 
@@ -122,10 +124,6 @@ alias vi="nvim"
 # ls backend
 ZSH_LS_BACKEND=eza
 
-# init starship
-eval "$(starship init zsh)"
-export STARSHIP_CONFIG=~/.config/starship.toml
-
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -133,6 +131,18 @@ export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/custom/themes/zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
 source $ZSH/oh-my-zsh.sh
+
+#Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+#Starship
+eval "$(starship init zsh)"
 
 # init starship
 export STARSHIP_CONFIG=~/.config/starship.toml
